@@ -8,7 +8,7 @@ public class ArrayImplementation {
             stdName[i]=in.nextLine();
         }
         System.out.println("The names which are stored in array are:");
-        for (int i=0;i<10;i++){
+        for (int i=0;i<n;i++){
             System.out.print(stdName[i]+"\t");
         }
     }
