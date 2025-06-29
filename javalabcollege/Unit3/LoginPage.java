@@ -1,9 +1,7 @@
 package javalabcollege.Unit3;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-
 public class LoginPage extends JFrame{
     private  JLabel lblUsername,lblPassword;
     private  JTextField txt1;
@@ -28,12 +26,14 @@ public class LoginPage extends JFrame{
        setLocationRelativeTo(null);
        btn.addActionListener(ActionEvent->{
            if(txt1.getText().equals("admin") && txt2.getText().equals("pradeep")){
-               JOptionPane.showMessageDialog(btn,"Logged In Successfully");
                btn.setBackground(Color.green);
+               dispose();
+               new Calculator();
            }
            else{
                btn.setBackground(Color.red);
                btn.setForeground(Color.white);
+               JOptionPane.showMessageDialog(btn,"Invalid Credentials");
 
            }
        });
