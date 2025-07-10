@@ -14,7 +14,7 @@ public class UDPClient {
         System.out.println("Enter Message:");
         while(true){
             byte[] dSend = in.nextLine().getBytes();
-            InetAddress ia = InetAddress.getByName("192.168.1.151");
+            InetAddress ia = InetAddress.getLocalHost();
             System.out.println(ia);
             DatagramPacket dpSend = new DatagramPacket(dSend,dSend.length,ia,9999);
             ds.send(dpSend);

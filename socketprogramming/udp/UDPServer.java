@@ -18,7 +18,7 @@ public class UDPServer {
             System.out.println("Client:"+message);
 
             byte[] dSend = message.toUpperCase().getBytes();
-            InetAddress ia = InetAddress.getByName("192.168.1.151");
+            InetAddress ia = InetAddress.getLocalHost();
             DatagramPacket dpSend = new DatagramPacket(dSend,dSend.length,ia,dpReceive.getPort());
             ds.send(dpSend);
         }
