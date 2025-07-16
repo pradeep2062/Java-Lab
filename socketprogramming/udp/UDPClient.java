@@ -18,7 +18,6 @@ public class UDPClient {
             while (true) {
                 byte[] dSend = in.nextLine().getBytes();
                 InetAddress ia = InetAddress.getByName(serverIP);
-                System.out.println(ia);
             DatagramPacket dpSend = new DatagramPacket(dSend,dSend.length,ia,9999);
             ds.send(dpSend);
             byte[] dReceive = new byte[1024];
