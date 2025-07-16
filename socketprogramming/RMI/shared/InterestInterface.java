@@ -1,5 +1,8 @@
-package socketprogramming.RMI.server;
+package socketprogramming.RMI.shared;
 
-public interface InterestInterface {
-    public double calculate(double p, double t, double r) ;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface InterestInterface extends Remote {
+    public double calculate(double p, double t, double r) throws RemoteException;
 }

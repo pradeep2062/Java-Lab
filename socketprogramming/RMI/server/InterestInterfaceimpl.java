@@ -1,6 +1,6 @@
-package socketprogramming.rmi;
+package socketprogramming.RMI.server;
 
-import socketprogramming.RMI.InterestInterface;
+import socketprogramming.RMI.shared.InterestInterface;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;

@@ -1,7 +1,7 @@
-package socketprogramming.RMI;
+package socketprogramming.RMI.server;
 
 
-import socketprogramming.rmi.InterestInterfaceimpl;
+import socketprogramming.RMI.shared.InterestInterface;
 
 import java.rmi.Remote;
 import java.rmi.registry.LocateRegistry;
