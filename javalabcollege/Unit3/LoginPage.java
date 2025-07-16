@@ -34,7 +34,6 @@ public class LoginPage extends JFrame{
                btn.setBackground(Color.red);
                btn.setForeground(Color.white);
                JOptionPane.showMessageDialog(btn,"Invalid Credentials");
-
            }
        });
        setLayout(null);
@@ -43,9 +42,7 @@ public class LoginPage extends JFrame{
        setVisible(true);
        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-
     public static void main(String[] args) {
        new LoginPage();
-
     }
 }

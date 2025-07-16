@@ -8,6 +8,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="javafx" level="project" />
+<<<<<<< HEAD
     <orderEntry type="library" name="mysql-connector-j-9.2" level="project" />
+=======
+    <orderEntry type="library" name="mysql-connector-j-9.3" level="project" />
+>>>>>>> 132a662947330b910f703d2c2b4c63a1eb643a19
   </component>
 </module>

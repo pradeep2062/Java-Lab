@@ -10,12 +10,15 @@ public class UDPClient {
     public static void main(String[] args){
         try{
         DatagramSocket ds = new DatagramSocket();
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter Message:");
-        while(true){
-            byte[] dSend = in.nextLine().getBytes();
-            InetAddress ia = InetAddress.getLocalHost();
-            System.out.println(ia);
+            System.out.println("Client started on " + InetAddress.getLocalHost().getHostAddress());
+            Scanner in = new Scanner(System.in);
+            System.out.println("Enter Server IP Address:");
+            String serverIP = in.nextLine();
+            System.out.println("Enter Message:");
+            while (true) {
+                byte[] dSend = in.nextLine().getBytes();
+                InetAddress ia = InetAddress.getByName(serverIP);
+                System.out.println(ia);
             DatagramPacket dpSend = new DatagramPacket(dSend,dSend.length,ia,9999);
             ds.send(dpSend);
             byte[] dReceive = new byte[1024];
