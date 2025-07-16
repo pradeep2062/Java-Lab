@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.stream.StreamSupport;
 
 public class DBCrud {
     public static Connection connect() throws Exception{
@@ -78,7 +77,7 @@ public class DBCrud {
 
     public static void main(String[] args) {
         try{
-            
+            //
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
